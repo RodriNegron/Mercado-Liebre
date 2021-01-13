@@ -47,6 +47,16 @@
     display: none;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+form div{
+    width: 100%;
+    border: solid 1px black;
+}
+
 @media (min-width:760px){
     .bottom-nav-bar{
         display: flex;
