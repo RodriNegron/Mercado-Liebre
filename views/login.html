@@ -21,7 +21,7 @@
             <form class="search-bar">
                 <input type="text" placeholder="Barra de busqueda">
                 <i class="fas fa-search"></i>
-            </form> 
+            </form>
             
             <h2 class="copy-nav-bar">
                 <i class="fas fa-hand-holding-usd"></i>
@@ -51,51 +51,14 @@
         <div class="form-container">
             <form action="/" method="GET">
                 <div>
-                    <label>Nombre y Apellido</label>
-                    <input type="text" name="name" required class="form-item"> 
-                </div>
-                <div>
                     <label>Nombre de usuario</label>
-                    <input type="text" name="user-name" class="form-item" pattern=".{4,}" title="El nombre de usuario debe tener al menos 4 caracteres" required>
-                </div>
-                <div>
-                    <label>Fecha de nacimiento</label>
-                    <input type="date" class="form-item" name="born-date">
-                </div>
-                <div>
-                    <label>Domicilio</label>
-                    <input type="input" name="address" class="form-item">
-                </div>
-                <div>
-                    <label>Tipo de perfil</label>
-                    <div class="form-item">
-                        <div class="profile">
-                            <input type="radio" name="profile-type" value="Comprador" checked> Comprador
-                            <input type="radio" name="profile-type" value="Vendedor"> Vendedor
-                        </div>
-                    </div>
-                </div>
-                <div class="categorias">
-                    <label>Categorias de interes</label>
-                    
-                        <input type="checkbox" name="interes" value="electro"> Electro
-                        <input type="checkbox" name="interes" value="moda"> Moda
-                        <input type="checkbox" name="interes" value="hogar"> Hogar
-                        <input type="checkbox" name="interes" value="jugueteria"> Jugueteria
-                        <input type="checkbox" name="interes" value="vidasana"> Vida Sana
-                </div>
-                <div>
-                    <label>Foto de usuario</label>
-                    <input type="file" class="form-item" name="avatar" accept="all">
+                    <input type="text" name="user-name" pattern=".{4,}" title="El nombre de usuario debe tener al menos 4 caracteres" class="form-item" required>
                 </div>
                 <div>
                     <label>Contraseña</label>
-                    <input type="password" name="password" class="form-item" pattern=".{8,}" title="La contraseña debe tener al menos 8 caracteres">
-                    <label>Confirmar contraseña</label>
-                    <input type="password" name="password" class="form-item" required>
+                    <input type="password" name="password" pattern=".{8,}" title="La contraseña debe tener al menos 8 caracteres" required>
                 </div>
-                <button type="reset">Borrar</button>
-                <button type="submit">Enviar</button>
+                <button type="submit">Ingresar</button>
             </form>
     </div>
     </main>
