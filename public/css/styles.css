@@ -1,32 +1,49 @@
 *{
     box-sizing: border-box;
+    font-family: 'Roboto';
+    padding: 0;
+    margin: 0;
 }
 
 .main-header{
     background-color: #EAC926;
-    font-family: Roboto;
-    padding: 20px;
+    padding: 15px;    
+}
+
+.top-nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-bottom: 10px;
 }
 
 .logo{
-    width: 180px;
+    width: 50%;
+}
+
+.bottom-nav-bar{
+    display: none;
 }
 
 .copy-nav-bar{
     text-align: center;
     font-weight: 400;
+    font-size: 15px;
+    margin:auto;
 }
 
-.burger-button{
-    color: #FFFFFF;
-    background-color: #03264C;
-    padding: 12px;
-    border-radius: 5px;
-    font-size: 16px;
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    display: block;
-    width: 50px;
-    text-align: center;
+    width: 50%;
+}
+
+.search-bar input{
+    border-radius: 5px;
+    width: 80%;
+    margin-right: 3px;
 }
 
 .bottom-nav-bar ul{
@@ -40,85 +57,155 @@
     color: black;
     display: inline-block;
     margin: 5px 0;
-    font-size: 17px;
+    font-size: 12px;
 }
 
-.bottom-nav-bar{
-    display: none;
+.main-section{
+    width: 90%;
+    margin: auto;
 }
 
-.container{
-    display: flex;
+.main-section h3{
+    font-size: 24px;
+    margin: 10px;
+}
+
+.product{
+    font-size: 18px;
+    margin-bottom: 10px;
     justify-content: center;
-    margin-top: 10px;
-}
-form div{
-    width: 100%;
-    border: solid 1px black;
+    box-shadow : 0px 0px 10px rgb(100,100,100 );
+    display: flex;
+    flex-direction: column;
 }
 
-@media (min-width:760px){
+.product-image{
+    width: 90%;
+    align-self: center;
+}
+
+.discount{
+    font-size: 16px;
+    color: #39b54a;
+    font-weight: 600;
+    width: 70%;
+}
+
+.price{
+    font-weight: 600;
+    width: 30%;
+}
+
+.title{
+    font-size: 16px;
+}
+
+.burger-button{
+    background-color: #03264C;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    width: 50px;
+}
+
+.main-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-footer div{
+    list-style: none;
+    text-align: center;
+}
+
+.main-footer p{
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.main-footer h5{
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.main-footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+.product-info{
+    border-top: 1px solid #ebebeb;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.product i{
+    position: absolute;
+}
+
+@media (min-width:361px){
+    
+    .title{
+        display:contents;
+    }
+
     .bottom-nav-bar{
         display: flex;
         justify-content: space-between;
     }
 
-    .top-nav-bar{
+    .bottom-nav-bar ul{
         display: flex;
-        justify-content: space-between;
     }
 
-    .copy-nav-bar{
-        text-align: right;
-        max-width: 240px;
+    .bottom-nav-bar li{
+        margin: 0 5px;
     }
 
     .burger-button{
         display: none;
     }
 
-    .bottom-nav-bar ul {
+    .product{
+        width: 35%;
+        margin: 10px;
+    }
+
+    .product-group{
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
 
-    }
-
-    .bottom-nav-bar li {
-        margin: 0 5px;
-    }
-}
-
-@media (min-width: 1200px){
-    .top-nav-bar, .bottom-nav-bar{
-        max-width: 1200px;
-        margin: auto;
-    }
-
-    .logo{
-        width: 350px;
     }
 
     .top-nav-bar{
-        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        justify-content: center;
     }
 
-    .copy-nav-bar{
-        text-align: right;
-        max-width: none;
-        font-size: 22px;
-        font-weight: 600;
+    .logo{
+        width: 30%;
     }
-
-    .bottom-nav-bar{
-        margin-top: 35px;
-    }
-
-    .bottom-nav-bar li {
-        margin: 0px 10px;
-    }
-
-    .bottom-nav-bar a {
-        font-size: 20px;
+    .search-bar{
+        width: 30%;
     }
     
+}
 
+@media (min-width:769px){
+    .product{
+        width: 25%;
+    }    
+    
 }

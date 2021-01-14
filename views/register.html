@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42d391c3ad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="top-nav-bar">
+            <img src="/images/logo-mercado-liebre.svg" class="logo">
+            <h2 class="copy-nav-bar">
+                <i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
+
+        <a href="#" class="burger-button"><i class="fas fa-bars"></i></a>
+
+            <nav class="bottom-nav-bar">
+
+                <ul class="nav-bar-left-list">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+
+                <ul class="nav-bar-right-list">
+                    <li><a href="#">Crea tu Cuenta</a></li>
+                    <li><a href="#">Ingresa</a></li>
+                    <li><a href="#">Mis Compras</a></li>
+                </ul>
+            </nav>
+    </header>
+    <div class="container">
+            <form action="">
+                <div>
+                    <label>Nombre del Producto:</label>
+                    <input type="text" name="nombre">
+                </div>
+                <div>
+                    <label>Precio</label>
+                    <input type="text" name="precio" placeholder="123.56">
+                </div>
+                <div>
+                    <label>Categoria</label>
+                    <select name="categoria" id="">
+                        <option value="hogar">Hogar</option>
+                        <option value="electro">Electro</option>
+                        <option value="indumentaria">Indumentaria</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Esta en oferta</label>
+                    <input type="text" name="Oferta">
+                </div>
+                <div>
+                    <label>Descripcion</label>
+                    <textarea name="descripcion"></textarea>
+                </div>
+                <button type="reset">Borrar</button>
+                <button type="submit">Enviar</button>
+            </form>
+</div>
+</body>
+</html>
