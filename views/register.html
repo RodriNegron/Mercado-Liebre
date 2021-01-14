@@ -50,7 +50,7 @@
     <main>
         <div class="form-container">
             <form action="/" method="GET">
-                <div>
+                <div class="control-form">
                     <label>Nombre y Apellido</label>
                     <input type="text" name="name" required class="form-item"> 
                 </div>
@@ -58,15 +58,15 @@
                     <label>Nombre de usuario</label>
                     <input type="text" name="user-name" class="form-item" pattern=".{4,}" title="El nombre de usuario debe tener al menos 4 caracteres" required>
                 </div>
-                <div>
+                <div class="control-form">
                     <label>Fecha de nacimiento</label>
                     <input type="date" class="form-item" name="born-date">
                 </div>
-                <div>
+                <div class="control-form">
                     <label>Domicilio</label>
                     <input type="input" name="address" class="form-item">
                 </div>
-                <div>
+                <div class="control-form">
                     <label>Tipo de perfil</label>
                     <div class="form-item">
                         <div class="profile">
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="categorias">
+                <div class="categorias" >
                     <label>Categorias de interes</label>
                     
                         <input type="checkbox" name="interes" value="electro"> Electro
@@ -84,18 +84,18 @@
                         <input type="checkbox" name="interes" value="jugueteria"> Jugueteria
                         <input type="checkbox" name="interes" value="vidasana"> Vida Sana
                 </div>
-                <div>
+                <div class="control-form">
                     <label>Foto de usuario</label>
                     <input type="file" class="form-item" name="avatar" accept="all">
                 </div>
-                <div>
+                <div class="control-form">
                     <label>Contraseña</label>
                     <input type="password" name="password" class="form-item" pattern=".{8,}" title="La contraseña debe tener al menos 8 caracteres">
                     <label>Confirmar contraseña</label>
                     <input type="password" name="password" class="form-item" required>
                 </div>
-                <button type="reset">Borrar</button>
-                <button type="submit">Enviar</button>
+                <button type="reset" class="form-button">Borrar</button>
+                <button type="submit" class="form-button">Enviar</button>
             </form>
     </div>
     </main>

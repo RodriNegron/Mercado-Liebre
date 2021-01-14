@@ -123,7 +123,8 @@
 
 .main-footer p{
     font-size: 12px;
-    margin-top: 0;
+    margin-top: 5px;
+    margin-bottom: 25px;
 }
 
 .main-footer h5{
@@ -164,6 +165,10 @@ form{
     margin: 10px;
 }
 
+.form-container label{
+    display: block;
+}
+
 form div{
     margin: 5px 0px 15px;
 }
@@ -182,8 +187,22 @@ form div{
     justify-content: space-evenly;
 }
 
+.form-button{
+    font-size: 20px;
+    border: none;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    margin: 10px 0px 10px 0px;
+}
+
+.categorias{
+}
+
+
 @media (min-width:361px){
-    
+     
     .title{
         display:contents;
     }
@@ -244,7 +263,7 @@ form div{
 
     .form-container{
         margin: 15px auto;
-        width: 60%;
+        max-width: 600px;
 
     }
     
