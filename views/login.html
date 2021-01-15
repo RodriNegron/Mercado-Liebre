@@ -32,14 +32,14 @@
         <nav class="bottom-nav-bar">
             <ul class="left-nav-bar">
                 <li><a href="#">Oferta</a></li>
-                <li><a href="#">Tiendas Oficialaes</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
             </ul>
     
             <ul class="right-nav-bar">
-                <li><a href="#">Crea tu cuenta</a></li>
-                <li><a href="#">Ingresa <i class="far fa-credit-card"></i></a></li>
+                <li><a href="/register">Crea tu cuenta <i class="far fa-credit-card"></i></a></li>
+                <li><a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
@@ -49,49 +49,49 @@
 <!-- ESTE ES EL MAIN -->
     <main>
         <div class="form-container">
-            <form action="/" method="GET">
-                <div>
+            <form action="/" method="GET" class="main-form">
+                <div class="control-form">
                     <label>Nombre de usuario</label>
-                    <input type="text" name="user-name" pattern=".{4,}" title="El nombre de usuario debe tener al menos 4 caracteres" class="form-item" required>
+                    <input type="text" name="user-name" class="form-item" pattern=".{4,}" title="El nombre de usuario debe tener al menos 4 caracteres" class="form-item" required>
                 </div>
-                <div>
+                <div class="control-form">
                     <label>Contraseña</label>
-                    <input type="password" name="password" pattern=".{8,}" title="La contraseña debe tener al menos 8 caracteres" required>
+                    <input type="password" name="password" class="form-item" pattern=".{8,}" title="La contraseña debe tener al menos 8 caracteres" required>
                 </div>
-                <button type="submit">Ingresar</button>
+                <button class="form-button" type="submit">Ingresar</button>
             </form>
     </div>
     </main>
 <!-- ESTE ES EL FOOTER -->
     <footer>
         <div class="main-footer">
-                <div>
-                <article>
-                    <i class="far fa-credit-card"></i>
-                    <h5>Pagá con tarjeta o en efectivo</h5>
-                    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo enpuntos de pago. ¡Y siempre es seguro!</p>
-                </article>
-                
-                <article>
-                    <i class="fas fa-gift"></i>
-                    <h5>Envío gratis desde $ 2.500</h5>
-                    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                        productos. Es un beneficio de Mercado Puntos.</p>
-                </article>
-                
-                <article>
-                    <i class="fas fa-user-shield"></i>
-                    <h5>Seguridad, de principio a fin</h5>
-                    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                        porque estás siempre protegid@.</p>
-                </article>
-                
-                <article>
-                    <h5>Copyright © 1999-2020 MercadoLiebre S.R.L.</h5>
-                </article>
-    
-            </div>
+            <div>
+            <article>
+                <i class="far fa-credit-card"></i>
+                <h5>Pagá con tarjeta o en efectivo</h5>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo enpuntos de pago. ¡Y siempre es seguro!</p>
+            </article>
+            
+            <article>
+                <i class="fas fa-gift"></i>
+                <h5>Envío gratis desde $ 2.500</h5>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </article>
+            
+            <article>
+                <i class="fas fa-user-shield"></i>
+                <h5>Seguridad, de principio a fin</h5>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+            </article>
+            
+            <article>
+                <h5>Copyright © 1999-2020 MercadoLiebre S.R.L.</h5>
+            </article>
+
         </div>
+    </div>
     </footer>
     </body>
 </html>

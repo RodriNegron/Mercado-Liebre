@@ -41,6 +41,7 @@
 }
 
 .search-bar input{
+    border: none;
     border-radius: 5px;
     width: 80%;
     margin-right: 3px;
@@ -74,7 +75,7 @@
     font-size: 18px;
     margin-bottom: 10px;
     justify-content: center;
-    box-shadow : 0px 0px 10px rgb(100,100,100 );
+    box-shadow : 0px 0px 3px rgb(100,100,100 );
     display: flex;
     flex-direction: column;
 }
@@ -85,19 +86,20 @@
 }
 
 .discount{
-    font-size: 16px;
+    font-size: 1em;
     color: #39b54a;
     font-weight: 600;
-    width: 70%;
+    width: 60%;
 }
 
 .price{
-    font-weight: 600;
-    width: 30%;
+    font-size: 1em;
+    font-weight: 500;
+    width: 20%;
 }
 
 .title{
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .burger-button{
@@ -119,6 +121,7 @@
 .main-footer div{
     list-style: none;
     text-align: center;
+    margin-top: 15px;
 }
 
 .main-footer p{
@@ -145,12 +148,15 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    justify-content: end;
+}
+.product-info .title{
+    margin: auto;
 }
 
 .product i{
     position: absolute;
 }
-
 
 .form-container{
     display: flex;
@@ -197,11 +203,25 @@ form div{
     margin: 10px 0px 10px 0px;
 }
 
-.categorias{
-}
+.form-button:hover {
+    background-color: #1259c3;
+    box-shadow : 0px 0px 5px;
+    transition: 0.3s linear;
+    opacity: 1;
+  }
 
+  .main-form{
+      width: 70%;
+  }
+  
 
-@media (min-width:361px){
+  .categorias ul {
+    margin: 0;
+    list-style: none;
+
+  }
+
+@media (min-width:390px){
      
     .title{
         display:contents;
@@ -254,6 +274,9 @@ form div{
 }
 
 @media (min-width:769px){
+    .title{
+        display:block;
+    }
     .product{
         width: 20%;
     }    
@@ -264,7 +287,43 @@ form div{
     .form-container{
         margin: 15px auto;
         max-width: 600px;
+    }
 
+    .bottom-nav-bar a{
+        font-size: 18px;
+    }
+    
+    .main-footer div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .copy-nav-bar{
+        font-size: 18px;
+    }
+    
+    .product .title{
+        transition: all .3s ease-in;
+        
+    }
+    .product .title{
+        height: 0px;
+        overflow: hidden;
+        margin-top: 0px;
+
+    }
+    .product:hover .title{
+        height: 50px;
+        overflow: auto;
+        margin-top: 20px;
+    }
+    .product{
+        transition: box-shadow .3s;
+    }
+    .product:hover{
+        box-shadow: 0 0 11px rgba(33,33,33,.2); 
     }
     
 }

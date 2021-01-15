@@ -32,14 +32,14 @@
         <nav class="bottom-nav-bar">
             <ul class="left-nav-bar">
                 <li><a href="#">Oferta</a></li>
-                <li><a href="#">Tiendas Oficialaes</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
             </ul>
     
             <ul class="right-nav-bar">
-                <li><a href="#">Crea tu cuenta</a></li>
-                <li><a href="#">Ingresa <i class="far fa-credit-card"></i></a></li>
+                <li><a href="/register">Crea tu cuenta <i class="far fa-credit-card"></i></a></li>
+                <li><a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
@@ -49,7 +49,7 @@
 <!-- ESTE ES EL MAIN -->
     <main>
         <div class="form-container">
-            <form action="/" method="GET">
+            <form action="/" method="GET" class="main-form">
                 <div class="control-form">
                     <label>Nombre y Apellido</label>
                     <input type="text" name="name" required class="form-item"> 
@@ -75,14 +75,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="categorias" >
+                <div>
                     <label>Categorias de interes</label>
-                    
-                        <input type="checkbox" name="interes" value="electro"> Electro
-                        <input type="checkbox" name="interes" value="moda"> Moda
-                        <input type="checkbox" name="interes" value="hogar"> Hogar
-                        <input type="checkbox" name="interes" value="jugueteria"> Jugueteria
-                        <input type="checkbox" name="interes" value="vidasana"> Vida Sana
+                    <div class="categorias">
+                        <ul>
+                            <li><input type="checkbox" name="interes" value="electro"> Electro</li>
+                            <li><input type="checkbox" name="interes" value="moda"> Moda</li>
+                            <li><input type="checkbox" name="interes" value="hogar"> Hogar</li>
+                            <li><input type="checkbox" name="interes" value="jugueteria"> Jugueteria</li>
+                            <li><input type="checkbox" name="interes" value="vidasana"> Vida Sana</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="control-form">
                     <label>Foto de usuario</label>
